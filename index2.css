@@ -1,0 +1,112 @@
+#Conteneur
+{
+	border-width: 3px;
+	background-color: #226CB7;
+	display:flex;
+	flex-direction:column;
+}
+#Conteneur2
+{
+	border-width: 3px;
+	background-color: #96C0EB;
+	display:flex;
+	flex-direction:column;
+}
+#nom
+{
+color: black;
+font-size: 50px;
+text-align: center;
+}
+
+#Titre1
+{
+color: black;
+font-size: 40px;
+text-align: center;
+}
+#h11
+{
+color: black;
+text-align: center;
+
+}
+#bdr
+{
+display:block;
+width:150px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background:black no-repeat;
+color:white;
+text-decoration:none;
+position: relative;
+left: 80%;
+border-radius: 12px 0 12px 0;
+font:bold 12px Verdana;
+padding:6px 0 6px 0;
+float: left;
+}
+#st
+{
+width:40%;
+height:100px;
+background:#fafafa;
+box-shadow:2px 2px 8px #aaa;
+font:bold 13px Arial;
+border-radius:50%;
+color:#555;
+position: relative;
+/*float:right;*/
+/*left: 83%;*/
+
+}
+#element3
+{
+color: black;
+font-size: 20px;
+text-align: left;
+width: 75%;
+float:left;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+}
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+    font-size: 20px;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 500%;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 100%;
+}
