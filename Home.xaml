@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectMobileDOM.Home">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="1" BackgroundColor="Black" Grid.ColumnSpan="3"/>
+            <Grid Grid.Column="1" BackgroundColor="Black" Grid.RowSpan="3"/>
+
+            <!--***************************************TEMPERATURE***************************************-->
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="AUTO"/>
+                </Grid.RowDefinitions>
+                
+                <!--TEXT-->
+                <Grid Grid.Row="0" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="AUTO"/>
+                        <ColumnDefinition Width="AUTO"/>
+                        <ColumnDefinition Width="AUTO"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Temp = " FontSize="20"/>
+                    <Label Grid.Column="1" Text="20" FontSize="22" TextColor="Red"/>
+                    <Label Grid.Column="2" Text="°C" FontSize="22" />
+                </Grid>
+                
+                <!--BOUTTON-->
+                <Button Grid.Row="1" Grid.Column="0" Text="clim" HorizontalOptions="Start" />
+                <Button Grid.Row="1" Grid.Column="1" Text="chauffage" HorizontalOptions="End" HeightRequest="60"/>
+            </Grid>
+            
+            <!--***************************************HUMIDITE***************************************-->
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="AUTO"/>
+                </Grid.RowDefinitions>
+                
+                <!--TEXT-->
+                <Grid Grid.Row="0" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="AUTO"/>
+                        <ColumnDefinition Width="AUTO"/>
+                        <ColumnDefinition Width="AUTO"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Humidity = " FontSize="20"/>
+                    <Label Grid.Column="1" Text="20" FontSize="22" TextColor="Red"/>
+                    <Label Grid.Column="2" Text="%" FontSize="22" />
+                </Grid>
+                
+                <!--BOUTTON-->
+                <Button Grid.Row="1" Grid.Column="0" Text="marche" HorizontalOptions="Start" />
+                <Button Grid.Row="1" Grid.Column="1" Text="arret" HorizontalOptions="End" />
+            </Grid>
+
+            <!--***************************************LUMIERE***************************************-->
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="AUTO"/>
+                </Grid.RowDefinitions>
+                <!--TEXT-->
+                <Grid Grid.Row="0" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="AUTO"/>
+                        <ColumnDefinition Width="AUTO"/>
+                        <ColumnDefinition Width="AUTO"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Lumiere = " FontSize="20"/>
+                    <Label Grid.Column="1" Text="20" FontSize="22" TextColor="Red"/>
+                    <Label Grid.Column="2" Text="L" FontSize="22" />
+                </Grid>
+                
+                <!--BOUTTON-->
+                <Button Grid.Row="1" Grid.Column="0" Text="eteindre" HorizontalOptions="Start" />
+                <Button Grid.Row="1" Grid.Column="1" Text="allumer" HorizontalOptions="End" HeightRequest="60"/>
+            </Grid>
+
+            <!--***************************************PLUIE***************************************-->
+            <Grid Grid.Row="2" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="AUTO"/>
+                </Grid.RowDefinitions>
+                <!--TEXT-->
+                <Grid Grid.Row="0" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="AUTO"/>
+                        <ColumnDefinition Width="AUTO"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Pluie = " FontSize="20"/>
+                    <Label Grid.Column="1" Text="NON" FontSize="22" TextColor="Green"/>
+                </Grid>
+                
+                <!--BOUTTON-->
+                <Button Grid.Row="1" Grid.Column="0" Text="ouvrire" HorizontalOptions="Start" />
+                <Button Grid.Row="1" Grid.Column="1" Text="fermer" HorizontalOptions="End"/>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

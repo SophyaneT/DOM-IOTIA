@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjectMobileDOM"
+             x:Class="ProjectMobileDOM.MainPage">
+
+    <StackLayout BackgroundColor="#FFe8e8e8">
+        <!-- Place new controls here -->
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="AUTO"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="1" Grid.Column="1" Text="DOM" HorizontalOptions="Center"/>
+
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Entry x:Name="Username" Grid.Row="0" Text="" Placeholder="Username" />
+                <Entry x:Name="Pwd" Grid.Row="1" Text="" Placeholder="Password" IsPassword="True" />
+
+                <Label x:Name="errorPwd" Grid.Row="3" VerticalOptions="Center" VerticalTextAlignment="Center" IsVisible="False" Text="PassWord ou UsernName érroné" TextColor="OrangeRed"/>
+                
+            </Grid>
+
+            <Button Clicked="ChangePageAsync" Text="Connection" HorizontalOptions="Center" Grid.Row="5" Grid.Column="1"/>
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
